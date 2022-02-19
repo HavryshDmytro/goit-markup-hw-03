@@ -349,7 +349,14 @@ footer {
 
 /* Portfolio */
 
+.button-container {
+  margin-bottom: 50px;
+}
+
 .portfolio-button .button {
+  border: none;
+  padding: 6px 22px;
+
   background-color: var(--button-bg-color);
   color: var(--title-text-color);
   cursor: pointer;
@@ -357,11 +364,56 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
 }
 .portfolio-button .button:hover,
 .portfolio-button .button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.img-portfolio {
+  display: block;
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+}
+
+.portfolio-text {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio-project .title {
